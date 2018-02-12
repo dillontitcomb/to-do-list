@@ -8,16 +8,8 @@
   <body>
     <div class="container">
       <h1>To Do List</h1>
-      <ul>
-        @foreach(var item in Model)
-        {
-          <li><a href='/items/@item.GetId()'>@item.GetDescription()</a></li>
-        }
-      </ul>
-      <p><a href="/items/new">Add new item</a></p>
-      <form action="/items/delete" method="post">
-        <button type="submit" name="button">Clear All Items</button>
-      </form>
+      <p><a href="/categories">View categories</a></p>
+      <p><a href="/categories/new">Add new category</a></p>
     </div>
   </body>
 </html>
